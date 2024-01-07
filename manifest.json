@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Oglądaj z Kudłatym",
+    "version": "0.1",
+    "description": "Dodaje przycisk na stronie Filmweb, pod nazwą filmu, który wyszukuje tytuł w serwisu HuraWatch",
+    "author": "1plusminus8",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.filmweb.pl/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"]
+}
